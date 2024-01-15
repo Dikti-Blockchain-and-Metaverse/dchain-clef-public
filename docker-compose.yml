@@ -1,17 +1,17 @@
 version: "3.7"
 
 services:
-  clef:
-    hostname: clef
-    image: clef
+  clef-testnet:
+    hostname: clef-testnet
+    image: clef-testnet
     build:
       context: .
     ports:
       - 8550:8550
     networks:
-      priv-eth-net:
+      priv-eth-net-testnet:
 
 networks:
-  priv-eth-net:
+  priv-eth-net-testnet:
     driver: bridge
-    name: priv-eth-net
+    name: priv-eth-net-testnet

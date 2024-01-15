@@ -1,5 +1,5 @@
 #!/bin/sh
-CHAIN_ID=17845
+CHAIN_ID=178451
 KEYSTORE=root/.clef/keystore
 CONFIGDIR=root/.clef
 PASSWORD=<PASSWORD>
