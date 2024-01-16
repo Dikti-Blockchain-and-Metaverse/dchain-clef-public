@@ -16,7 +16,7 @@ EOF
 # running clef
 expect << EOF
 set timeout -1
-spawn clef --keystore $KEYSTORE --configdir $CONFIGDIR --chainid $CHAIN_ID  --suppress-bootwarn  --rules $CONFIGDIR/rules.js --http --nousb --http.vhosts $GETH --http.addr 0.0.0.0
+spawn clef --keystore $KEYSTORE --configdir $CONFIGDIR --chainid $CHAIN_ID  --suppress-bootwarn  --rules $CONFIGDIR/rules.js --http --nousb --http.vhosts $GETH --http.addr 0.0.0.0 --http.port 8551
 expect ">"
 send "$PASSWORD\n"
 expect eof
